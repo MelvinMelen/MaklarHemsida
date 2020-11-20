@@ -6,16 +6,43 @@
   --tint3: #2e86ab;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+.size-preset1 {
+  height: 30rem;
+  width: 25rem;
+}
+.size-preset-auto {
+  height: auto;
+  width: auto;
+}
+.size-preset-showcase {
+  height: 15rem;
+  width: 25rem;
+}
+
+/* font-family: "Noto Sans KR", sans-serif; */
+/* font-family: 'Patua One', cursive; */
+/* font-family: "Roboto", sans-serif; */
 
 * {
-  font-family: Cambria, Georgia, serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(base);
-  color: #000;
+  color: var(--primary);
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  border: 0px solid;
 }
 
 a {
   text-decoration: none;
+}
+
+.icon {
+  height: 24px !important;
+  width: 24px !important;
 }
 
 body {
@@ -31,25 +58,140 @@ header {
   display: grid;
   grid-template-rows: 2fr 1fr;
 
-  background-color: var(--primary);
+  background-color: var(--base);
+}
+header * {
+  color: #000;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.3rem;
+  align-self: center;
+}
+header div {
+  display: flex;
+  background-color: var(--base);
+}
+header div h1 {
+  justify-self: center;
+}
+header img {
+  height: 5rem;
 }
 header nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-}
-header nav a p {
-  font-family: "Noto Sans KR", sans-serif;
+  background-color: var(--primary);
 }
 
 main {
   grid-column: 1 / -1;
   background-color: var(--base);
+  /* border: 2px solid black; */
 
+  display: grid;
+  grid-template-rows: 1fr 1px 2fr;
   height: 100vh;
+}
+
+.showcase {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.showcase img {
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+}
+
+.box-1 {
+  grid-row: 3;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 25rem;
+  background-color: var(--tint2);
+  border: 1px solid var(--primary);
+}
+.search img {
+  height: 20rem;
+  width: 25rem;
+}
+.search-bar {
+  align-self: flex-end;
+  height: 5rem;
+  width: 25rem;
+  background-color: var(--base);
+
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0;
+  width: 20vw;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  text-align: center;
+
+  height: 25rem;
+  width: 25rem;
+  border: 1px solid var(--primary);
+  background-color: var(--tint2);
+}
+.about img {
+  height: 20rem;
+  width: 25rem;
+}
+.about button {
+  display: block;
+  height: 5rem;
+
+  background-color: var(--base);
+  border: 1px solid var(--primary);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 25rem;
+  width: 25rem;
+  background-color: var(--tint2);
+}
+.contact * {
+  padding-right: 2rem;
+}
+.contact a {
+  display: flex;
+  border: 1px solid var(--primary);
+  background-color: var(--base);
+
+  height: 4vh;
+  width: auto;
 }
 
 footer {
   grid-column: 1 / -1;
   background-color: var(--primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer * {
+  color: #000;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.5rem;
 }
