@@ -20,20 +20,20 @@
     <title>Mäklar Hemsida</title>
   </head>
   <body>
-    <header>
+    <header id="#top">
       <div>
         <img src="/media/logo.png" alt="Logo of a house" />
         <h1>Mäklarföretag</h1>
       </div>
       <nav>
-        <a href=""> <p>Category</p> </a>
+        <a href=""> <p>Sales</p> </a>
         <a href=""> <p>Services</p> </a>
         <a href=""> <p>About</p> </a>
         <a href=""> <p>Contact</p> </a>
       </nav>
     </header>
     <main>
-      <div class="showcase">
+      <!-- <div class="showcase">
         <img
           class="size-preset-showcase"
           src="/media/real-estate/real-estate-example1.jpg"
@@ -49,11 +49,16 @@
           src="/media/real-estate/real-estate-example3.jpg"
           alt=""
         />
+      </div> -->
+
+      <div class="showcase">
+        
       </div>
+
       <hr />
       <div class="box-1">
         <div class="search">
-          <img src="/media/real-estate/real-estate-example4.jpg" alt="" />
+          <img src="/media/search-photo.jpg" alt="Picture of minature house and magnying glass" />
 
           <div class="search-bar">
             <img
@@ -65,13 +70,13 @@
           </div>
         </div>
         <div class="about">
-          <img src="/media/real-estate/real-estate-example4.jpg" alt="" />
+          <img src="/media/about-photo.jpg" alt="Picture of not book next to a meal" />
 
           <button><h1>About us</h1></button>
         </div>
         <div class="contact">
-          <img src="" alt="" />
-          <a href="">
+          <img src="/media/realtors.jpg" alt="Picture of two realtors" />
+          <a href="#phone">
             <img
               class="icon"
               src="/media/phone-call.png"
@@ -79,7 +84,7 @@
             />
             <p>424 242 42 42</p>
           </a>
-          <a href="">
+          <a href="#email">
             <img
               class="icon"
               src="/media/email.png"
@@ -87,11 +92,46 @@
             />
             <p>example.email.com</p>
           </a>
+          <a href="#message">
+            <img src="/media/speech-bubble.png" alt="Picture of speech-bubble" class="icon">
+            <p>Message us!</p>
+          </a>
         </div>
       </div>
     </main>
     <footer>
-      <h3>Mäklar företag AB</h3>
+      <div class="contact-menu" id="message">
+        <h2>Contact us via message</h2>
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" />
+        <label for="country">Country</label>
+        <input type="text" id="country" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <label for="message">Message</label>
+        <textarea placeholder="Enter massage" id="mesage"></textarea>
+        <input type="submit" value="send" class="send" />
+      </div>
+
+      <div class="footer-list">
+        <a href="#about"> <p>About us</p>
+        <a href="#services"> <p>Services</p> </a>
+        <a href="#sales"> <p>Sales</p> </a>
+        <a href="#top"> <p>Back to top</p> </a>
+      </div>
+
+      <div class="socials">
+        <h2>Socials</h2>
+        <div>
+        <a href=""> <p>Instagram</p> <img src="/media/instagram.png" alt="Logo of instagram" class="icon2"> </a>
+        <a href=""> <p>Twitter</p> <img src="/media/twitter.png" alt="Logo of twitter" class="icon2"> </a>
+        <a href=""> <p>Youtube</p> <img src="/media/youtube.png" alt="Logo of youtube" class="icon2"> </a>
+      </div>
+      </div>
+
+      <div class="ab">
+        <h2>Mäklar företag AB</h2>
+      </div>
     </footer>
   </body>
 </html>
